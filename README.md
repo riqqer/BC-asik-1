@@ -59,6 +59,7 @@ This project demonstrates a basic Ether wallet smart contract that:
 
 1. **Start Ganache:**
     - Ensure Ganache is running on `http://127.0.0.1:8545`.
+    - In case of running a Sepolia testnet change the `INFURA_PROJECT_ID` in [.env]() file to your own Infura Project ID.
 
 2. **Deploy the Contract:**
     ```bash

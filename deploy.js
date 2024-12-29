@@ -3,7 +3,9 @@ const Web3 = require('web3').default;
 const fs = require('fs');
 const path = require('path');
 
-const provider = 'http://127.0.0.1:8545'
+const localnet = true;
+
+const provider = (localnet) ? 'http://127.0.0.1:8545' : `https://sepolia.infura.io/v3/${process.env.INFURA_PROJECT_ID}`;
 const web3 = new Web3(new Web3.providers.HttpProvider(provider));
 
 const contractABI = JSON.parse(
